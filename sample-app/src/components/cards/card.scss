@@ -1,0 +1,87 @@
+.card-parent-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  .card {
+    width: 920px;
+    height: 176px;
+    @media screen and (max-width: 486px) {
+      width: 800px;
+    }
+    border: 1px solid #b2b2b2;
+    border-radius: 15px;
+    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)";
+    .card-header {
+      height: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+     
+      width: 100%;
+      background-color: #ffffff;
+      .revenue {
+        .revenue-details {
+          color: #416ee1;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 30px;
+          margin-left: 10px;
+        }
+      }
+      .revenue-details-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .ISITN-number {
+          font-size: 14px;
+          color: #666666;
+          margin-right: 2px;
+        }
+        .ISITIN {
+          font-size: 16px;
+          color: #202222;
+          margin-right: 10px;
+        }
+        .hdfc-logo {
+          width: 95px;
+          height: 44px;
+          margin-right: 10px;  
+        }
+        .vector {
+          width: 29px;
+          height: 26px;
+          margin-right: 10px; 
+        }
+      }
+    }
+    .card-footer {
+      background-color: #f1f5ff;
+      height: 50%;
+      width: 100%;
+      box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: row;
+      
+      justify-content: space-around;
+      align-items: center;
+      .card-footer-details{
+          font-size: 14px;
+          
+          color: #666666;
+          .card-footer-details-text{
+              font-size: 16px;
+              color: #202222;
+          }
+          .imageLogo{
+              height: 50%;
+          }
+      }
+    }
+  }
+}

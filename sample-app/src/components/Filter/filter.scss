@@ -1,0 +1,34 @@
+.filter-container-parent {
+  .filter-container {
+    width: 340px;
+    height: 2581px;
+    @media screen and (max-width: 500px) {
+        width: 450px;
+      }
+    background-color: #f4f4f4;
+    border: 1px solid #c2c2c2;
+    border-radius: 15px;
+    .filter-header {
+      align-items: center;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      padding: 15px;
+      flex-direction: row;
+     .filter-text{
+        font-weight: 600;
+        font-size: 18px;
+        margin-left: 10px;
+     }
+     
+    }
+    .yeild-filter{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        .filter-accordian{
+            border-radius :'15px'
+        }
+    }
+  }
+}

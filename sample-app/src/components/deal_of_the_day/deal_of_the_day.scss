@@ -1,0 +1,52 @@
+.deal-of-the-day-parent-container {
+  width: 300px;
+  height: 258px;
+  background-color: #416ee1;
+  border-radius: 15px;
+
+  .deal-of-the-day-header {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .title {
+      font-size: 20px;
+      color: #ffffff;
+    }
+    .stepers {
+      background-color: #416ee1;
+      color: #ffffff;
+    }
+  }
+  .deal-details-card {
+    width: 260px;
+    height: 175px;
+    margin-left: 18px;
+
+    .card-header {
+      margin-top: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .growth {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .YealdHead,
+      .priceHead {
+        color: #666666;
+        font-size: 12px;
+        align-self: flex-start;
+        .yelid,
+        .price {
+          font-size: 16px;
+          color: #202222;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

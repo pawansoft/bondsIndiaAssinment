@@ -1,0 +1,16 @@
+.header-parent-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+    .tab-header{
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+        .tab-details{
+            font-size: 16px;
+            color: #8C8C8C;
+        }
+    }
+}

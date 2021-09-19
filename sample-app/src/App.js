@@ -9,6 +9,9 @@ import MediaQuery from "react-responsive";
 import FilterFrame from "../src/assets/Frame.png";
 import Filter from "./components/Filter/filter";
 import { Avatar, Button, Typography } from "@material-ui/core";
+import MobileCard from "./components/mobile-card/mobile-card";
+import MobileDetailCard from "./components/details-mobile-card/detail-mobile-card";
+import Header from "./components/details-mobile-card/header";
 
 function App() {
   const [openFilter, setOpenFilter] = React.useState(false);
@@ -45,9 +48,33 @@ function App() {
                 </div>
               </MediaQuery>
               <MediaQuery maxWidth={500}>
-                <div style={{ marginLeft: "10px" }}>
-                  <PortFolio />
-                  <div
+                <MediaQuery maxWidth={500}>
+                
+                  <div style = {{background : '#F1F5FF', display : 'flex',  flexDirection : 'column', width :'600px', height: '1500px', alignItems:'center'}}>
+                  <div style = {{backgroundColor : '#FFFFFF', width : '100%',marginBottom : '50px',}}>
+                  <Header/>
+                  </div>
+                
+                    <MobileCard />
+                   
+                    <Button
+                      onClick={handleFilterButton}
+                      variant = 'outlined'
+                      style={{ borderRadius: "25px", width: "45%", height : '70px', marginTop : '120px'  }}
+                      startIcon={<Avatar src={FilterFrame} />}
+                    >
+                      <Typography
+                        style={{ fontSize: "20px", fontWeight: "bold" }}
+                      >
+                        Filter Criteria
+                      </Typography>
+                    </Button>
+                    <MobileDetailCard/>
+                  </div>
+                </MediaQuery>
+                {/* <div style={{ marginLeft: "10px" }}>
+                  {/* <PortFolio /> */}
+                {/*  <div
                     style={{
                       display: "flex",
                       justifyContent: "flex-start",
@@ -66,7 +93,7 @@ function App() {
                       </Typography>
                     </Button>
                   </div>
-                </div>
+                </div> */}
               </MediaQuery>
 
               <MediaQuery minWidth={1224}>
@@ -75,13 +102,14 @@ function App() {
                 </div>
               </MediaQuery>
             </div>
+            <MediaQuery minWidth={600}>
             {[1, 2, 3, 3, 3, 3].map((eachCard) => {
               return <CustomCard />;
             })}
+            </MediaQuery>
           </div>
         </div>
       ) : (
-        
         <Filter close={handleFilterButton} />
       )}
     </div>

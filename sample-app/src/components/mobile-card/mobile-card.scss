@@ -1,0 +1,52 @@
+.mobile-card-parent-container {
+    width: 90%;
+    height: 400px;
+  .mobile-card {
+    
+    height: 500px;
+    background: #ffffff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    .card-header {
+      display: flex;
+      align-items: center;
+      height: 150px;
+      justify-content: space-around;
+      .first-container {
+        display: flex;
+        .title {
+          font-size: 14px;
+          color: #666666;
+          .details {
+            font-size: 16px;
+            color: #202222;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .second-container {
+        // background-image: url("../../assets/circleGroup.png");
+        align-items: center;
+       width: 100%;
+       
+      }
+
+    .deal-of-the-tabs {
+      margin: 5px;
+      .MuiTabs-scroller,
+      .MuiTabs-fixed {
+        .MuiTabs-flexContainer,
+        .MuiTabs-centered {
+          .MuiButtonBase-root,
+          .MuiTab-root {
+            // min-width: 120;
+            .MuiTab-wrapper {
+              text-transform: "none";
+            }
+          }
+        }
+      }
+    }
+  }
+}
